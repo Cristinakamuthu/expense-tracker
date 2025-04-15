@@ -49,16 +49,7 @@ function App() {
     }
   ]);
 
-  const [expenses, setExpenses] = useState(Initialexpenses);
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const filteredExpenses = expenses.filter(exp =>
-    exp.expense.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  const handleAddExpense = (newExpense) => {
-    setExpenses([...expenses, newExpense]);
-  };
+  
   
   const submited = (newExpense) => {
     const updatedExpense = { ...newExpense
@@ -70,7 +61,7 @@ function App() {
     <>
       <div className='bluecolor'></div>
       <Title />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <Search/>
       <Form onAddExpense={submited} />
       <Table tables={tables} />
     </>
