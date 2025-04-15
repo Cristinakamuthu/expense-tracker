@@ -1,6 +1,7 @@
 import React from 'react'
 import App from '../App'
 
+
 const Table = ({ tables }) => {
   const newTable = () => {
     return (
@@ -27,7 +28,8 @@ const Table = ({ tables }) => {
     )
   }
 
-  return <div>
+  return <div id='table1'>
+
     {newTable()}
   </div>
 }

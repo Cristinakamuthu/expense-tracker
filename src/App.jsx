@@ -5,6 +5,7 @@ import './App.css'
 import Title from './components/Title'
 import Search from './components/Search'
 import Table from './components/Table'
+import Form from './components/Form'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -45,7 +46,9 @@ function App() {
     <div className='bluecolor'></div>
     <Title />
     <Search/>
-    <Table tables = {tables}/>
+    <Form/>
+    
+<Table tables = {tables}/>
     </>
   )
 }
