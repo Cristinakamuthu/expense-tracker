@@ -13,30 +13,45 @@ function App() {
     {
     id:1,
     expense:"Ugali Matumbo",
-    description:"Wednesday's Lunch"
+    description:"Wednesday's Lunch",
+    category:"food",
+    amount:"300",
+    date:"23-2-2024"
     },
 
     {
       id:2,
     expense:"KPLC tokens",
-    description:"power Tokens"
+    description:"power Tokens",
+    category:"electricity",
+    amount:"300",
+    date:"12-3-2024"
     },
 
     {
       id:3,
     expense:"Buy shoes",
-    description:"Add to my shoe collection"
+    description:"Add to my shoe collection",
+    category:"shoes",
+    amount:"300",
+    date:"13-4-2024"
   },
 
 
     { id:4,
     expense:"Buy book",
-    description:"Add to my book collection"
+    description:"Add to my book collection",
+    category:"book",
+    amount:"300",
+    date:"23-6-2024"
     },
 
     {id:5,
     expense:"Pay Loan",
-    description:"Bank loan repayment"
+    description:"Bank loan repayment",
+    category:"money",
+    amount:"300",
+    date:"13-4-2025"
     }
 
  ]
@@ -46,7 +61,7 @@ function App() {
     <div className='bluecolor'></div>
     <Title />
     <Search/>
-    <Form/>
+    <Form  form = {tables}/>
     
 <Table tables = {tables}/>
     </>

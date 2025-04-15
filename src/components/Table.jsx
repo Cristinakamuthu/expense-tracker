@@ -11,6 +11,11 @@ const Table = ({ tables }) => {
           <tr>
             <th>Expense</th>
             <th>Description</th>
+            <th>Category</th>
+            <th>amount</th>
+            <th>date</th>
+            
+
           </tr>
         </thead>
         <tbody>
@@ -18,6 +23,9 @@ const Table = ({ tables }) => {
             <tr key={table.id}>
               <td>{table.expense}</td>
               <td>{table.description}</td>
+              <td>{table.category}</td>
+              <td>{table.amount}</td>
+              <td>{table.date}</td>
             </tr>
           )
           )

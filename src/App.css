@@ -48,11 +48,19 @@ table{
 
 
   }
-  #form{
+  #form-container{
     display: flex;
     flex-direction: column;
     width: 50vh;
     padding-left: 150px;
+
+    form{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    padding-left: 150px;
+
+    }
 
     h1{
       padding-left: 150px;
