@@ -1,10 +1,11 @@
 import React from 'react'
+import App from './App.jsx'
 
-const Search = () => {
+const Search = ({setSearchterm, searchTerm}) => {
   return (
     <div id='search'>
-<input type="text" placeholder='search expenses' />
-<button id="btn">submit</button>
+<input type="text" placeholder='search expenses' value={searchTerm} />
+
     </div>
   )
 }
